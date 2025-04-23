@@ -191,3 +191,56 @@ body {
   font-weight: 800;
   padding: 10px 0;
 }
+
+
+
+/* Features Section */
+.Container {
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.features-hero {
+  max-width: 800px;
+  text-align: center;
+  color: #1e293b;
+}
+
+
+.features-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1216px;
+  margin: 0 auto;
+}
+
+.feature-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.feature-item img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.feature-item h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.feature-item p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #475569;
+  max-width: 384px;
+}
