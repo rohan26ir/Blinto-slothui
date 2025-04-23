@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body{
   font-family: 'Plus Jakarta Sans', sans-serif;
 }
@@ -78,4 +83,72 @@ body{
   color: white;
   cursor: pointer;
   font-weight: 600;
+}
+
+/* Hero section wrapper with gradient background */
+.heroContainer {
+  background: linear-gradient(to bottom, #ffffff 0%, #eef1fc 40%, #d8dcf8 70%, #b9bef1 90%, #8F94E9 100%);
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+
+/* Text content */
+.hero {
+  max-width: 800px;
+  text-align: center;
+  color: #1e293b;
+}
+
+.hero1p {
+  font-size: 14px;
+  font-weight: 600;
+  background: #EEF2FF;
+  padding: 6px 12px;
+  border-radius: 60px;
+  color: #4F46E5;
+  display: inline-block;
+}
+
+.hero h2 {
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 20px 0;
+}
+
+.hero2p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #475569;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.appButton{
+  display: flex;
+  gap: 8px;
+}
+
+/* Image section */
+.heroImg img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* compony */
+
+.company {
+  background-color: #F8FAFC;
+  padding: 64px 112px;
+}
+.company1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
