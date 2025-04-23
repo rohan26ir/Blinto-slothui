@@ -363,6 +363,10 @@ body {
   padding-left: 10px;
 }
 
+.testimonialBg {
+  background: #F8FAFC;
+}
+
 .testimonialCards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
@@ -408,6 +412,12 @@ body {
   display: flex;
   gap: 16px;
   padding-top: 10px;
+}
+
+.testimonialAuthor h2{
+  font-size: 16px;
+  font-weight: 700;
+  color: #1e293b;
 }
 
 .testimonialCardDescrip {
