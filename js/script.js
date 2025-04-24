@@ -31,3 +31,12 @@ function initializeAccordions() {
 
 // Initialize on page load
 initializeAccordions();
+
+
+// Footer section
+  document.querySelector('.footerCenterImg').addEventListener('click', function () {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
