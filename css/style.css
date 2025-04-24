@@ -542,3 +542,140 @@ body {
 .accordion.active + .panel {
   display: block;
 }
+
+
+/* Let’s Download The App. */
+.downloadAppContainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 64px 112px;
+  background: #EEF2FF;
+}
+
+.downloadAppText{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.downloadButton {
+  display: flex;
+  gap: 12px;
+  padding: 24px 0;
+}
+
+
+.downloadAppImg {
+  display: flex;
+  gap: 5px;
+}
+
+
+/* Download the App Section */
+
+.downloadApp {
+  background-color: #EEF2FF;
+  /* position: relative; */
+  height: 900px;
+  overflow: hidden;
+}
+
+
+.downloadAppContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 60px 0 60px 60px;
+  position: relative;
+}
+
+/* Text Section */
+.downloadAppText {
+  flex: 1;
+  justify-content: center;
+  align-items: start;
+  max-width: 50%;
+  padding-right: 20px;
+
+}
+
+
+.downloadAppText p {
+  font-size: 16px;
+  font-weight: 700;
+  color: #475569;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  max-width: 480px;
+}
+
+/* Buttons */
+.downloadButton {
+  display: flex;
+  gap: 20px;
+}
+
+.btn3 {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #4F46E5;
+  background: transparent;
+  border: 2px solid #4F46E5;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+.btn2 {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background: #4F46E5;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+
+/* Image Section */
+.downloadAppImg {
+  flex: 1;
+  max-width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.downloadAppImg div {
+  max-width: 50%;
+}
+
+/* .firstPhoneImg {
+  position: absolute;
+  bottom: 0;
+  left: 400px;
+} */
+
+.firstPhoneImg {
+  max-width: 50%;
+  position: absolute;
+  top: 40px;
+  right: 200px;
+}
+
+.secondPhoneImg {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+
