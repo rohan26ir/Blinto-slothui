@@ -442,3 +442,103 @@ body {
 .VisitCard p {
   max-width: 90%;
 }
+
+.FAQ2p {
+  font-size: 18px;
+}
+
+
+
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 0 auto;
+  /* padding: 60px 20px; */
+}
+
+
+
+/* FAQ Items */
+.faq-items {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.faq-item {
+  border-bottom: 1px solid #e0e7ff;
+}
+
+.faq-item:last-child {
+  border-bottom: none;
+}
+
+.accordion {
+  cursor: pointer;
+  padding: 20px 0;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1e293b;
+  transition: 0.4s;
+  display: flex;
+  align-items: center;
+  background: none;
+}
+
+.accordion:hover,
+.active {
+  background: none;
+}
+
+/* icon and question text (justify start) */
+.accordion-content {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  color: #334155;
+}
+
+/* Left icon */
+.accordion-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+
+/* toggleArrow img */
+.toggleArrow {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.3s ease;
+  margin-left: auto;
+}
+
+
+.accordion.active .toggleArrow {
+  transform: rotate(180deg);
+}
+
+.panel {
+  padding: 0;
+  display: none;
+  background: none;
+  overflow: hidden;
+}
+
+.panel p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #475569;
+  line-height: 1.5;
+  padding-bottom: 15px;
+}
+
+.accordion.active + .panel {
+  display: block;
+}
