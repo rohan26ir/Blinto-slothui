@@ -1,0 +1,687 @@
+/* Hamburger Menu Styles */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: #333;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+/* Hidden Class for Testimonials */
+.hiddenBTN {
+  display: none;
+}
+
+
+
+
+  /* Responsive for Medium Device */
+@media screen and (max-width: 1024px) {
+  /* Navbar */
+  .navbar-container {
+    padding: 12px 40px;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    position: relative;
+  }
+
+  .hamburger {
+    display: block;
+    justify-self: end;
+  }
+
+  .navCenter {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    align-items: center;
+  }
+
+  .navCenter.active {
+    display: flex;
+  }
+
+  .navCenter a {
+    padding: 10px 0;
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .navRight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+    width: 100%;
+  }
+
+  .btn1,
+  .btn2 {
+    padding: 10px 16px;
+    font-size: 14px;
+    width: 100%;
+    max-width: 200px;
+  }
+
+  /* Hero Section */
+  .heroContainer {
+    padding: 40px 20px;
+    gap: 30px;
+  }
+
+  .hero h2 {
+    font-size: 40px;
+  }
+
+  .hero2p {
+    font-size: 16px;
+    max-width: 90%;
+  }
+
+  .appButton {
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .appButton img {
+    width: 150px;
+  }
+
+  .heroImg img {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  /* Company Section */
+  .company {
+    padding: 40px 20px;
+  }
+
+  .company1 {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .company1 img {
+    max-width: 80px;
+  }
+
+  /* Features Section */
+  .features-container {
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    gap: 15px;
+  }
+
+  .feature-item h3 {
+    font-size: 18px;
+  }
+
+  .feature-item p {
+    font-size: 14px;
+  }
+
+  /* Result Section */
+  .result-count {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .result-count1,
+  .result-count2 {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #CBD5E1;
+    padding-bottom: 20px;
+  }
+
+  .result-count3 {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+
+  .resultH2 {
+    font-size: 48px;
+  }
+
+  /* Who is it for? */
+  .Container-who {
+    padding: 60px 40px;
+  }
+
+  .steps-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .steps {
+    padding-right: 0;
+  }
+
+  .steps-container img {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  /* Testimonials */
+  .testimonialCards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 0 20px;
+  }
+
+  .testimonialCardContainer {
+    max-width: none;
+    margin: 0;
+    display: contents;
+  }
+
+  .testimonialCard {
+    max-width: 100%;
+    display: block;
+  }
+
+  /* Remove hidden class all testimonial cards */
+  .testimonialCard.hiddenS,
+  .testimonialCard[id="hiddenS"] {
+    display: block;
+  }
+
+  
+  .hiddenM {
+    display: none;
+  }
+
+  /* Hide Load More Button */
+  .loadMoreContainer {
+    display: none;
+  }
+
+  /* Visit Us */
+  .VisitCardContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    padding-left: 26px;
+    margin: auto;
+  }
+
+  .VisitCard {
+    width: 80%;
+  }
+
+  /* FAQ */
+  .faq-container {
+    padding: 0 20px;
+  }
+
+  .accordion {
+    font-size: 16px;
+  }
+
+  .panel p {
+    font-size: 14px;
+  }
+
+  /* Download App */
+  .downloadApp {
+    height: auto;
+  }
+
+  .downloadAppContainer {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 30px;
+  }
+
+  .downloadAppText {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .downloadAppImg {
+    justify-content: space-between;
+    position: relative;
+    gap: 80px;
+  }
+
+  .firstPhoneImg {
+    position: static;
+    max-width: 100%;
+    margin-top: 70px;
+    border-radius: 18px;
+    box-shadow: #C3C9D7 0px 0px 30px 0px;
+  }
+   
+  .secondPhoneImg {
+    position: static;
+    max-width: 100%;
+  }
+
+  /* Footer */
+  .footerContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 40px 20px;
+  }
+
+  .footerContainer > div {
+    flex: 1 1 40%;
+  }
+
+  .footerBottom {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
+
+
+/* Responsive for Small Device */
+@media screen and (max-width: 767px) {
+  /* Navbar */
+  .navbar-container {
+    padding: 12px 20px;
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+    position: relative;
+  }
+
+  #hiddenS {
+    display: none;
+  }
+
+  .logoimg {
+    width: 100px;
+    height: 100px;
+  }
+
+  .hamburger {
+    display: block;
+    justify-self: end;
+  }
+
+  .navCenter {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    align-items: center;
+  }
+
+  .navCenter.active {
+    display: flex;
+  }
+
+  .navCenter a {
+    padding: 12px 0;
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .navRight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+    width: 100%;
+  }
+
+  .btn1,
+  .btn2 {
+    padding: 8px 12px;
+    font-size: 12px;
+    width: 100%;
+    max-width: 200px;
+  }
+
+  /* Hero Section */
+  .heroContainer {
+    padding: 30px 15px;
+    gap: 20px;
+  }
+
+  .hero1p {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+
+  .hero h2 {
+    font-size: 28px;
+  }
+
+  .hero2p {
+    font-size: 16px;
+    max-width: 90%;
+  }
+
+  .appButton {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .appButton img {
+    width: 120px;
+  }
+
+  .heroImg img {
+    width: 100%;
+  }
+
+  /* Company Section */
+  .company {
+    padding: 30px 15px;
+  }
+
+  .company1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .company1 img {
+    max-width: 60px;
+  }
+
+  /* Features Section */
+  .Container {
+    padding: 30px 15px;
+    gap: 20px;
+  }
+
+  .features-hero h2 {
+    font-size: 28px;
+  }
+
+  .features-hero p {
+    font-size: 14px;
+  }
+
+  .features-container {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    max-width: 90%;
+  }
+
+  .feature-item img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .feature-item h3 {
+    font-size: 16px;
+  }
+
+  .feature-item p {
+    font-size: 16px;
+    max-width: 100%;
+  }
+
+  /* Result Section */
+  .resultH2 {
+    font-size: 36px;
+  }
+
+  .resultP {
+    font-size: 16px;
+  }
+
+  /* Who is it for? */
+  .Container-who {
+    padding: 40px 20px;
+  }
+
+  .whoTitle {
+    font-size: 28px;
+  }
+
+  .description {
+    font-size: 14px;
+    max-width: 100%;
+  }
+
+  .steps {
+    gap: 15px;
+  }
+
+  .steps1Bordder,
+  .steps1Bordder1 {
+    padding-left: 8px;
+  }
+
+  .steps-container img {
+    width: 100%;
+  }
+
+  /* Testimonials */
+  .testimonialCards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    padding: 0 20px;
+  }
+
+  .testimonialCard {
+    padding: 16px;
+  }
+
+  .testimonialCardImg {
+    width: 40%;
+  }
+
+  .testimonialAuthor h2 {
+    font-size: 14px;
+  }
+
+  .testimonialAuthor p {
+    font-size: 12px;
+  }
+
+  .loadMoreContainer{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+  }
+
+  .loadMoreBtn {
+    font-size: 12px;
+    padding: 8px 135px;
+    max-width: 100%;
+    border-radius: 60px;
+    background: #4F46E5;
+    color: white;
+    border: none;
+  }
+
+  /* Visit Us */
+  .VisitCardContainer{
+    flex-direction: column;
+    gap: 15px;
+    padding-right: 40px;
+  }
+  .VisitCard {
+    padding-right: 16px;  
+    margin: auto;
+    height: 100px;
+  }
+
+  .VisitCard h2 {
+    font-size: 18px;
+  }
+
+  .VisitCard p {
+    font-size: 14px;
+    max-width: 50%;
+  }
+
+  /* FAQ */
+  .FAQ2p {
+    font-size: 16px;
+    max-width: 80%;
+    margin: auto;
+  }
+
+  .accordion {
+    font-size: 14px;
+    padding: 15px 0;
+  }
+
+  .accordion-icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .toggleArrow {
+    width: 12px;
+    height: 12px;
+  }
+
+  .panel p {
+    font-size: 13px;
+  }
+
+  /* Download App */
+  .downloadAppText h2 {
+    font-size: 28px;
+  }
+
+  .downloadAppText p {
+    font-size: 14px;
+  }
+
+  .downloadButton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin: auto;
+  }
+
+  .btn3,
+  .btn4 {
+    padding: 10px 135px;
+    font-size: 14px;
+  }
+
+  .downloadAppContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 30px;
+  }
+
+  .downloadAppText {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .downloadAppImg {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    position: relative;
+  }
+
+  .firstPhoneImg {
+    max-width: 110%;
+    margin-top: 70px;
+    border-radius: 18px;
+    box-shadow: #C3C9D7 0px 0px 30px 0px;
+  }
+
+  .secondPhoneImg {
+    max-width: 100%;
+    border-radius: 18px;
+    box-shadow: #C3C9D7 0px 0px 40px 0px;
+  }
+
+  /* Footer */
+  .footerContainer {
+    flex-direction: column;
+    padding: 30px 15px;
+  }
+
+  .footerContainer > div {
+    flex: 1 1 100%;
+  }
+
+  .footerContainer h2 {
+    font-size: 14px;
+  }
+
+  .footerContainer li {
+    font-size: 13px;
+    line-height: 24px;
+  }
+
+  .footerBottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 20px;
+  }
+
+  .footerBottom .logo {
+    order: 1;
+  }
+
+  .footerBottom div:nth-child(3) {
+    order: 2;
+  }
+
+  .footerBottom p {
+    font-size: 12px;
+    order: 2;
+    text-align: center;
+    margin: -30px 0 0 0;
+  }
+
+  .footerBottom .footerCenterImg {
+    order: 4;
+  }
+
+  .footerBottom img {
+    width: 60px;
+  }
+}

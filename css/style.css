@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
@@ -17,12 +16,12 @@ body {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   align-items: center;
+  justify-content: space-between;
   max-width: 1440px;
   height: 80px;
-  padding: 16px 112px;
+  padding: 12px 100px;
   margin: 0 auto;
 }
-
 
 
 .logoimg {
@@ -64,7 +63,6 @@ body {
   color: #475569;
   cursor: pointer;
   font-weight: 600;
-  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .btn1:hover {
@@ -80,7 +78,6 @@ body {
   color: white;
   cursor: pointer;
   font-weight: 600;
-  transition: background-color 0.3s ease;
 }
 
 .btn2:hover {
@@ -345,6 +342,16 @@ body {
   padding-right: 60px;
 }
 
+.steps1Bordder, .steps1Bordder1 h3{
+  color: #475569;
+  padding-top: 16px;
+}
+
+.steps1Bordder, .steps1Bordder1 p{
+  color: #475569;
+  padding-bottom: 16px;
+}
+
 .steps1Bordder {
   border: none;
   border-left: 3px solid #4F46E5;
@@ -365,9 +372,9 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
   column-gap: 20px;
   row-gap: 5px;
-  max-width: 1216px;
-  padding: 0 112px;
-  margin: 0 auto;
+  max-width: 1050px;
+  /* padding: 0 64px; */
+  margin: auto;
   align-items: start;
   gap: 24px;
 }
@@ -488,7 +495,7 @@ body {
   background: none;
 }
 
-/* icon and question text (justify start) */
+/* icon and question text */
 .accordion-content {
   display: flex;
   align-items: center;
@@ -522,6 +529,16 @@ body {
   display: none;
   background: none;
   overflow: hidden;
+}
+
+#hiddenL {
+  display: none;
+}
+.loadMoreContainer{
+  display: none;
+}
+.hiddenLarge {
+  display: block;
 }
 
 .panel p {
@@ -622,7 +639,6 @@ body {
   border: 2px solid #4F46E5;
   border-radius: 50px;
   cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 
@@ -635,7 +651,6 @@ body {
   border: none;
   border-radius: 50px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
 
@@ -724,4 +739,8 @@ footer {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+
+.bgWhite {
+  background: white;
 }
