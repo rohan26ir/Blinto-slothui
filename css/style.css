@@ -5,6 +5,12 @@
 
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.border {
+  border: 1px solid red;
 }
 
 /* Navbar Styles */
@@ -17,10 +23,11 @@ body {
   grid-template-columns: 1fr 2fr 1fr;
   align-items: center;
   justify-content: space-between;
-  max-width: 1440px;
+  max-width: 1216px;
   height: 80px;
   padding: 12px 100px;
   margin: 0 auto;
+
 }
 
 
@@ -35,12 +42,12 @@ body {
 .navCenter {
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: 32px;
 }
 
 .navCenter a {
   text-decoration: none;
-  color: #333;
+  color: #475569;
   font-weight: 500;
   transition: color 0.3s ease;
 }
@@ -94,7 +101,7 @@ body {
     #b9bef1 90%,
     #8f94e9 100%
   );
-  padding: 60px 20px;
+  padding: 60px 20px 0 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -128,8 +135,6 @@ body {
   font-size: 18px;
   font-weight: 400;
   color: #475569;
-  max-width: 700px;
-  margin: 0 auto;
 }
 
 .appButton {
@@ -137,9 +142,10 @@ body {
   gap: 8px;
 }
 
+
+
 .heroImg img {
   max-width: 100%;
-  height: auto;
   display: block;
 }
 
@@ -147,18 +153,20 @@ body {
 .company {
   background-color: #f8fafc;
   padding: 64px 112px;
+  max-width: 1216px;
+  margin: auto;
 }
 
 .company1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 64px;
 }
 
 .company1 img {
-  max-width: 100px;
-  height: auto;
+  max-width: 144px;
+  height: 96px;
 }
 
 /* Features Section */
@@ -174,6 +182,11 @@ body {
   max-width: 800px;
   text-align: center;
   color: #1e293b;
+}
+
+.features-hero p {
+  font-size: 20px;
+  color: #475569;
 }
 
 .title {
@@ -199,13 +212,20 @@ body {
   color: #1e293b;
 }
 
+.FeaturesDescription {
+  font-size: 20px;
+  font-weight: 400;
+  color: #475569;
+  line-height: 160%;
+}
+
 
 .features-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
   max-width: 1216px;
-  margin: 0 auto;
+  margin: auto;
 }
 
 .feature-item {
@@ -213,12 +233,13 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  max-width: 384px;
   gap: 20px;
 }
 
 .feature-item img {
-  width: 48px;
-  height: 48px;
+  width: 80px;
+  height: 80px;
   object-fit: contain;
 }
 
@@ -232,24 +253,38 @@ body {
   font-size: 16px;
   font-weight: 400;
   color: #475569;
-  max-width: 384px;
+}
+
+
+.resultBg{
+  background: #F8FAFC;
+  padding: 96px 112px;
+}
+
+.resultContainer{
+  max-width: 800px;
+  margin: auto;
 }
 
 .resultIcon {
   background: #eef2ff;
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center; 
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
+  width:  56px;
+  height: 56px;
+  border-radius: 123px;
+  margin: auto;
 }
 
 
 
 .result-count {
+  max-width: 800px;
+  margin: auto;
   display: flex;
   gap: 16px;
+  padding-top: 64px;
 }
 
 .resultH2 {
@@ -260,11 +295,10 @@ body {
 .resultP {
   font-size: 18px;
   font-weight: 700;
+  color: #475569;
+  text-align: center;
 }
 
-.resultBg{
-  background: #F8FAFC;
-}
 
 .result-count1 {
   width: 245px;
@@ -292,34 +326,6 @@ body {
   max-width: 700px;
 }
 
-.Container-who {
-  max-width: 1216px;
-  margin: 0 auto;
-  padding: 96px 112px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: start;
-  gap: 40px;
-}
-
-.who-text{
-  align-items: center;
-  justify-content: start;
-  max-width: 1216px;
-  margin: 0 auto 0  0;
-}
-
-
-
-.whoTitle {
-  font-size: 36px;
-  font-weight: 800;
-  padding: 10px 0;
-  color: #1e293b;
-}
-
-
 .steps-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -342,9 +348,9 @@ body {
   padding-right: 60px;
 }
 
-.steps1Bordder, .steps1Bordder1 h3{
+.steps1Bordder h3, .steps1Bordder1 h3{
   color: #475569;
-  padding-top: 16px;
+  padding: 24px 0;
 }
 
 .steps1Bordder, .steps1Bordder1 p{
@@ -354,17 +360,18 @@ body {
 
 .steps1Bordder {
   border: none;
-  border-left: 3px solid #4F46E5;
+  border-left: 4px solid #4F46E5;
   padding-left: 10px;
 }
 .steps1Bordder1 {
   border: none;
-  border-left: 3px solid #E0E7FF;
+  border-left: 4px solid #E0E7FF;
   padding-left: 10px;
 }
 
 .testimonialBg {
   background: #F8FAFC;
+  padding: 96px 48px;
 }
 
 .testimonialCards {
@@ -372,15 +379,14 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
   column-gap: 20px;
   row-gap: 5px;
-  max-width: 1050px;
-  /* padding: 0 64px; */
+  max-width: 1216px;
   margin: auto;
   align-items: start;
-  gap: 24px;
+  gap: 32px;
 }
 
 .testimonialCardContainer{
-  gap: 24px;
+  gap: 32px;
   display: flex;
   flex-direction: column;
 }
@@ -389,12 +395,11 @@ body {
   max-width: 384px;
   height: auto;
   padding: 24px;
-  border: 1px solid #E0E7FF;
-  border-radius: 14px;
+  border: 1px solid #E2E8F0;
+  border-radius: 24px;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  background-color: #fff; 
 }
 
 .testimonialCardContainer p {
@@ -424,9 +429,35 @@ body {
   padding: 10px 0;
 }
 
+
+.Container-who {
+  max-width: 1216px;
+  margin: 0 auto;
+  padding: 96px 112px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  gap: 64px;
+}
+
+.who-text{
+  align-items: center;
+  justify-content: start;
+  max-width: 1216px;
+  margin: 0 auto 0  0;
+}
+
+.whoTitle {
+  font-size: 36px;
+  font-weight: 800;
+  padding: 10px 0;
+  color: #1e293b;
+}
+
 .VisitCardContainer{
   display: flex;
-  gap: 10px;
+  gap: 32px;
 }
 
 .VisitCard{
@@ -435,26 +466,29 @@ body {
   border-radius: 14px;
 }
 
+.VisitCard img {
+  padding-bottom: 24px;
+}
+
 .VisitCard h2 {
   margin: 5px 0;
 }
 
 .VisitCard p {
   max-width: 90%;
-}
-
-.FAQ2p {
-  font-size: 18px;
+  color: #1E293B;
 }
 
 
+.fawContainer {
+  padding: 96px 320px;
+}
 
 .faq-container {
   display: flex;
   flex-direction: column;
   max-width: 800px;
   margin: 0 auto;
-  /* padding: 60px 20px; */
 }
 
 
@@ -725,6 +759,7 @@ footer {
 .footerBottom{
   max-width: 1216px;
   margin: auto;
+  gap: 16p;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -733,8 +768,16 @@ footer {
   padding: 8px 0 16px 0;
 }
 
+.Footerlogo{
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+
+}
+
 .footerBottom p {
   color: #94A3B8;
+  font-size: 14px;
 }
 
 .footerCenterImg {

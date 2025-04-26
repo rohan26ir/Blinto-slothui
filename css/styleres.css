@@ -31,16 +31,19 @@
   display: none;
 }
 
+.border {
+  border: 1px solid red;
+}
 
 
-
-  /* Responsive for Medium Device */
+/* Responsive for Medium Device */
 @media screen and (max-width: 1024px) {
+
   /* Navbar */
   .navbar-container {
     padding: 12px 40px;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 10px;
     position: relative;
   }
 
@@ -169,6 +172,7 @@
 
   .resultH2 {
     font-size: 48px;
+    text-align: center;
   }
 
   /* Who is it for? */
@@ -217,7 +221,7 @@
     display: block;
   }
 
-  
+
   .hiddenM {
     display: none;
   }
@@ -241,8 +245,16 @@
   }
 
   /* FAQ */
+
+  .fawContainer {
+    padding: 64px 36px;
+  }
+
   .faq-container {
-    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 375px;
+    margin: 0 auto;
   }
 
   .accordion {
@@ -254,8 +266,8 @@
   }
 
   /* Download App */
-  
-  
+
+
   .downloadApp {
     height: auto;
   }
@@ -284,7 +296,7 @@
     width: 130%;
     height: 300px;
   }
-   
+
   .secondPhoneImg {
     position: absolute;
     width: 46%;
@@ -301,7 +313,7 @@
     padding: 40px 20px;
   }
 
-  .footerContainer > div {
+  .footerContainer>div {
     flex: 1 1 40%;
   }
 
@@ -315,6 +327,7 @@
 
 /* Responsive for Small Device */
 @media screen and (max-width: 767px) {
+
   /* Navbar */
   .navbar-container {
     padding: 12px 20px;
@@ -463,6 +476,29 @@
   }
 
   /* Result Section */
+
+
+  .resultBg {
+    background: #F8FAFC;
+    padding: 64px 16px;
+  }
+
+  .resultContainer {
+    max-width: 375px;
+    margin: auto;
+  }
+
+  .resultContainer h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .resultContainer p {
+    font-size: 14px;
+    text-align: center;
+    max-width: 100%;
+  }
+
   .resultH2 {
     font-size: 36px;
   }
@@ -489,7 +525,7 @@
     gap: 15px;
   }
 
-  
+
 
   .steps1Bordder1 {
     padding-left: 8px;
@@ -523,7 +559,7 @@
     font-size: 12px;
   }
 
-  .loadMoreContainer{
+  .loadMoreContainer {
     display: flex;
     justify-content: center;
     padding: 20px 0;
@@ -540,13 +576,14 @@
   }
 
   /* Visit Us */
-  .VisitCardContainer{
+  .VisitCardContainer {
     grid-template-columns: 1fr;
     gap: 15px;
     padding-right: 40px;
   }
+
   .VisitCard {
-    padding-right: 16px;  
+    padding-right: 16px;
     margin: auto;
     height: 100px;
   }
@@ -561,6 +598,19 @@
   }
 
   /* FAQ */
+
+
+  .fawContainer {
+    padding: 64px 16px;
+  }
+
+  .faq-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 375px;
+    margin: 0 auto;
+  }
+
   .FAQ2p {
     font-size: 16px;
     max-width: 80%;
@@ -595,7 +645,7 @@
     font-size: 14px;
   }
 
-  .downloadButton{
+  .downloadButton {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -632,13 +682,13 @@
     justify-content: space-between;
     gap: 10px;
     position: relative;
-    max-height:auto;
+    max-height: auto;
     width: 90%;
   }
 
   .firstPhoneImg {
     max-width: 100%;
-    margin-top: 90px; 
+    margin-top: 90px;
     border-radius: 18px;
     box-shadow: #C3C9D7 0px 0px 30px 0px;
   }
@@ -657,7 +707,7 @@
     padding: 30px 15px;
   }
 
-  .footerContainer > div {
+  .footerContainer>div {
     flex: 1 1 100%;
   }
 
