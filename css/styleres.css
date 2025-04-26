@@ -333,7 +333,7 @@
 
   /* Navbar */
   .navbar-container {
-    padding: 12px 20px;
+    padding: 0 20px;
     grid-template-columns: 1fr 1fr;
     height: auto;
     position: relative;
@@ -508,7 +508,9 @@
   }
 
   .resultH2 {
-    font-size: 36px;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 68px;
   }
 
   .resultP {
