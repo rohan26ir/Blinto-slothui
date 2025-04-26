@@ -589,7 +589,7 @@ body {
 .downloadApp {
   background-color: #EEF2FF;
   /* position: relative; */
-  height: 600px;
+  /* height: 600px; */
   overflow: hidden;
 }
 
@@ -602,6 +602,7 @@ body {
   margin: 0 auto;
   padding: 60px 0 60px 60px;
   position: relative;
+  height: 395px;
 }
 
 /* Text Section */
@@ -674,16 +675,22 @@ body {
 } */
 
 .firstPhoneImg {
-  max-width: 50%;
+  height: 550px;
+  width: auto;
   position: absolute;
-  top: 40px;
-  right: 200px;
+  top: 60px;
+  /* bottom: -280px; */
+  right: 300px;
+  box-shadow: #E2E8F0 0px 0px 20px 0px;
 }
 
 .secondPhoneImg {
+  height: 550px;
+  width: auto;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -100px;
+  right: -24px;
+  box-shadow: #E2E8F0 0px 0px 20px 0px;
 }
 
 /* footerContainer */

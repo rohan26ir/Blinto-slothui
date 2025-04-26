@@ -181,13 +181,15 @@
     gap: 30px;
   }
 
-  .steps {
-    padding-right: 0;
+  .steps1Bordder {
+    width: 100%;
+    margin: auto;
+    border-left: 3px solid #4F46E5;
   }
 
   .steps-container img {
-    width: 80%;
-    margin: 0 auto;
+    width: 100%;
+    margin: auto;
   }
 
   /* Testimonials */
@@ -252,6 +254,8 @@
   }
 
   /* Download App */
+  
+  
   .downloadApp {
     height: auto;
   }
@@ -260,6 +264,7 @@
     flex-direction: column;
     padding: 40px 20px;
     gap: 30px;
+    height: 600px;
   }
 
   .downloadAppText {
@@ -270,20 +275,21 @@
   .downloadAppImg {
     justify-content: space-between;
     position: relative;
-    gap: 80px;
+    gap: 40px;
+    width: 400px;
   }
 
   .firstPhoneImg {
     position: static;
-    max-width: 100%;
-    margin-top: 70px;
-    border-radius: 18px;
-    box-shadow: #C3C9D7 0px 0px 30px 0px;
+    width: 130%;
+    height: 300px;
   }
    
   .secondPhoneImg {
-    position: static;
-    max-width: 100%;
+    position: absolute;
+    width: 50%;
+    height: 300px;
+    top: -30px;
   }
 
   /* Footer */
@@ -483,7 +489,8 @@
     gap: 15px;
   }
 
-  .steps1Bordder,
+  
+
   .steps1Bordder1 {
     padding-left: 8px;
   }
@@ -524,7 +531,7 @@
 
   .loadMoreBtn {
     font-size: 12px;
-    padding: 8px 135px;
+    padding: 8px 100px;
     max-width: 100%;
     border-radius: 60px;
     background: #4F46E5;
@@ -598,8 +605,14 @@
 
   .btn3,
   .btn4 {
-    padding: 10px 135px;
+    padding: 10px 100px;
     font-size: 14px;
+  }
+
+  .downloadApp {
+    height: 850px;
+    max-width: 100%;
+    margin: auto;
   }
 
   .downloadAppContainer {
@@ -619,11 +632,13 @@
     justify-content: space-between;
     gap: 50px;
     position: relative;
+    max-height:auto;
+    max-width: 100%;
   }
 
   .firstPhoneImg {
-    max-width: 110%;
-    margin-top: 70px;
+    max-width: 100%;
+    margin-top: 90px; 
     border-radius: 18px;
     box-shadow: #C3C9D7 0px 0px 30px 0px;
   }
