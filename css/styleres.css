@@ -45,6 +45,7 @@
     grid-template-columns: 1fr 1fr;
     gap: 10px;
     position: relative;
+    max-width: 100%;
   }
 
   .hamburger {
@@ -63,6 +64,8 @@
     padding: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     align-items: center;
+    max-width: 95%;
+    margin: auto;
   }
 
   .navCenter.active {
@@ -334,6 +337,8 @@
     grid-template-columns: 1fr 1fr;
     height: auto;
     position: relative;
+    max-width: 375px;
+    margin: auto;
   }
 
   #hiddenS {
@@ -362,6 +367,8 @@
     padding: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     align-items: center;
+    max-width: 90%;
+    margin: auto;
   }
 
   .navCenter.active {
