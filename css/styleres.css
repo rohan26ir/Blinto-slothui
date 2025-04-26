@@ -591,9 +591,10 @@
   }
 
   .VisitCard {
-    padding-right: 16px;
+    padding-right: 20px;
     margin: auto;
-    height: 100px;
+    max-width: 343px;
+    max-height: 170px;
   }
 
   .VisitCard h2 {
@@ -602,7 +603,6 @@
 
   .VisitCard p {
     font-size: 14px;
-    max-width: 50%;
   }
 
   /* FAQ */
