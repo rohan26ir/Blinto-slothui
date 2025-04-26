@@ -287,7 +287,7 @@
    
   .secondPhoneImg {
     position: absolute;
-    width: 50%;
+    width: 46%;
     height: 300px;
     top: -30px;
   }
@@ -630,10 +630,10 @@
   .downloadAppImg {
     display: flex;
     justify-content: space-between;
-    gap: 50px;
+    gap: 10px;
     position: relative;
     max-height:auto;
-    max-width: 100%;
+    width: 90%;
   }
 
   .firstPhoneImg {
@@ -644,7 +644,9 @@
   }
 
   .secondPhoneImg {
-    max-width: 100%;
+    position: absolute;
+    right: 0;
+    max-width: 45%;
     border-radius: 18px;
     box-shadow: #C3C9D7 0px 0px 40px 0px;
   }
